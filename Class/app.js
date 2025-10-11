@@ -39,6 +39,8 @@
 // console.log("My name is" + " " + name +  " "+"I am " 
 // + age  + " " +"years old" +  " " +"I like " + hobby);
 
+// Class 02
+
 // var myName = "Zia Uddin"
 // alert(myName)
 
@@ -71,8 +73,48 @@
 // Reserved words (JavaScript keywords) cannot be used as names.
 // var,let,contain, for.
 
-var num = 50 - 48
-num = 50*2
-num = 50/10
-num = 50%3
-console.log(num);
+// var num = 50 - 48
+// num = 50*2
+// num = 50/10
+// num = 50%3
+// console.log(num);
+
+
+// Class 03
+//Increament
+// var count = 0
+// count++
+// count++
+// count++
+// count++
+// count++
+// console.log(count);
+
+//Decreament
+// var num = 5
+// var newNUm = --num
+// console.log(newNUm);
+
+//Practice:
+// var num = 5 
+// var newNum =num -- + ++num
+// console.log(newNum);
+
+// var age = 50
+// var after5Years = age++ * 5
+// console.log(after5Years);
+
+// var num = 10
+// var newNum = num * 2
+// console.log(num);
+
+// var age = 17
+// console.log("My age is "+ ++age + 
+//     "after some  year");
+
+// var num = 89
+// num++ - --num
+// console.log(num);
+
+
+
