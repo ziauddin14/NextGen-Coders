@@ -3,14 +3,12 @@
 // lastname = "Raza"
 // console.log(firstname + " " + lastname)
 
-
 // var studentname = "Asim"
 // var studentage = 20
 // var studentclass = "B.Tech"
 // console.log("Student Name is " + studentname);
 // console.log("Student Age is:" + studentage);
 // console.log("Student Class is " + studentclass);
-
 
 // Question 1
 // var fruit = "Apple"
@@ -33,10 +31,10 @@
 // console.log(temp);
 
 // // Question 5
-// var name = "Ali" 
+// var name = "Ali"
 // var age = 18
 // var hobby = "Football"
-// console.log("My name is" + " " + name +  " "+"I am " 
+// console.log("My name is" + " " + name +  " "+"I am "
 // + age  + " " +"years old" +  " " +"I like " + hobby);
 
 // Class 02
@@ -79,7 +77,6 @@
 // num = 50%3
 // console.log(num);
 
-
 // Class 03
 // Increament
 // var count = 0
@@ -96,7 +93,7 @@
 // console.log(newNUm);
 
 //Practice:
-// var num = 5 
+// var num = 5
 // var newNum = num-- + ++num
 // console.log(newNum);
 
@@ -109,7 +106,7 @@
 // console.log(num);
 
 // var age = 17
-// console.log("My age is "+ ++age + 
+// console.log("My age is "+ ++age +
 //     "after some  year");
 
 // var num = 89
@@ -121,7 +118,7 @@
 // console.log(num);
 //BODMAS (Bracket Open Division Multiplication Addition Subtraction)
 // var cal = (15-8) + (5-9)
-// console.log(cal) 
+// console.log(cal)
 
 // var result = ((2 * 4) * 4) + 2;
 // console.log(result);
@@ -139,11 +136,11 @@
 // var num2 = "89"
 // console.log(num1 + num2);
 
-alert("2 plus 2 equals " + (2 + 2));
+// alert("2 plus 2 equals " + (2 + 2));
 
-var n = 7
-var ans =  n++ + ++n - n--  + --n
-console.log(ans)
+// var n = 7
+// var ans =  n++ + ++n - n--  + --n
+// console.log(ans)
 
 //Practise Problems:
 // console.log("2" + "2");
@@ -158,4 +155,42 @@ console.log(ans)
 // console.log("Your Age is after 1 year "
 //     + num + 1);
 
- 
+//********Data Types in JavaScript *//////
+//1: String, 2: Number, 3: Boolean, 4:Undefined
+//5: Null, 6: Array, 7:Object
+//Undefined Example:
+// var num
+// console.log(num);
+//Null Example:
+// var name = null
+// console.log(name);
+
+//Boolean Example:
+// var name  = "Zia"
+// var age = 17
+// var student = 19
+// console.log(name + " " +age+ " " + student);
+// === !== < > >=  =< ==
+// if(student === "19"){
+//    alert("Bacha parhta h ...")
+// }else{
+//    alert('Child is HK')
+// }
+// var age = +prompt("Enter your Age:")
+// if (age <= 18) {
+//     console.log("You Can't Vote");
+// } else {
+//     console.log("You can Vote");
+
+// }
+var marks = +prompt("Enter your Marks: ");
+if (marks >= 90) {
+  console.log("Your grade is A+");
+} else if (marks >= 80) {
+  console.log("Your grade is A");
+}else if(marks >= 70){
+    console.log('B grade');
+}else{
+    console.log('You are Topper from neechy');
+    
+}
