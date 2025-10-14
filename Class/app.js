@@ -65,8 +65,8 @@
 
 // Names can contain letters, digits, underscores, and dollar signs.
 // Names must begin with a letter, a $ sign or an underscore (_).
-// var _fisrtcity = "lahore"
-// console.log(_fisrtcity);
+// var _firstcity = "lahore"
+// console.log(_firstcity);
 // Names are case sensitive (X is different from x).
 // var name = "Uma"
 // var Name = "ima"
@@ -81,7 +81,7 @@
 
 
 // Class 03
-//Increament
+// Increament
 // var count = 0
 // count++
 // count++
@@ -97,7 +97,7 @@
 
 //Practice:
 // var num = 5 
-// var newNum =num -- + ++num
+// var newNum = num-- + ++num
 // console.log(newNum);
 
 // var age = 50
@@ -116,5 +116,46 @@
 // num++ - --num
 // console.log(num);
 
+// // Class 04
+// var num = (1+3)*4
+// console.log(num);
+//BODMAS (Bracket Open Division Multiplication Addition Subtraction)
+// var cal = (15-8) + (5-9)
+// console.log(cal) 
 
+// var result = ((2 * 4) * 4) + 2;
+// console.log(result);
 
+//Concateneting Strings
+// var firstName = "Maria"
+// var lastName = "--"
+// console.log(firstName + lastName);
+
+// var num1 = "10"
+// var num2 = "40"
+// console.log(num1 + num2);
+
+// var num1 = '20'
+// var num2 = "89"
+// console.log(num1 + num2);
+
+alert("2 plus 2 equals " + (2 + 2));
+
+var n = 7
+var ans =  n++ + ++n - n--  + --n
+console.log(ans)
+
+//Practise Problems:
+// console.log("2" + "2");
+// console.log("2" + 2);
+// console.log(2 + 2 + "2" + 2 + 2);
+// console.log("2" + 2 + 2);
+
+// var name = prompt("Enter your name: ")
+// console.log(name);
+
+// var num = +prompt("Enter your Age: ")
+// console.log("Your Age is after 1 year "
+//     + num + 1);
+
+ 
