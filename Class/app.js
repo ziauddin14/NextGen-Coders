@@ -183,14 +183,47 @@
 //     console.log("You can Vote");
 
 // }
-var marks = +prompt("Enter your Marks: ");
-if (marks >= 90) {
-  console.log("Your grade is A+");
-} else if (marks >= 80) {
-  console.log("Your grade is A");
-}else if(marks >= 70){
-    console.log('B grade');
-}else{
-    console.log('You are Topper from neechy');
+// var marks = +prompt("Enter your Marks: ");
+// if (marks >= 90) {
+//   console.log("Your grade is A+");
+// } else if (marks >= 80) {
+//   console.log("Your grade is A");
+// }else if(marks >= 70){
+//     console.log('B grade');
+// }else{
+//     console.log('You are Topper from neechy');
     
+// }
+// var str = "3"
+// console.log(typeof(str));
+
+ //Arithmetic Operator: +, -, *, /, %, **, ++, --
+ //Assignment Operator: =, +=, -=, *=, ,/= ,%= ,**=
+ //Comparision operator: ==, ===, !=, !==, >,<, >=, <=, ?, : 
+//  var age  = 15
+ // age += 1 ==> age = age + 1
+ // age -= 1 ==> age = age - 1
+ //age *= 1 ==> age = age * 1
+//  age /= 2 ==> age = age / 2
+// age %= 2 ==> age = age % 2
+// age **= 2 ==> age = age ** 2
+//  console.log(age);
+// var age = prompt("Enter your Age: ")
+// if (age != 18) {
+//   console.log("you are eligible for vote!");
+  
+// } else if(age > 18){
+//   console.log("you are not eligible for vote!");
+  
+// }else{
+//   console.log("dhandli hogai!");
+  
+// }
+
+var num = prompt("Enter a Number: ")
+if (num % 2 === 0) {
+  console.log("this num is even");
+} else {
+  console.log("this number is odd");
 }
+ 
