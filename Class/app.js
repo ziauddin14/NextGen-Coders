@@ -192,18 +192,18 @@
 //     console.log('B grade');
 // }else{
 //     console.log('You are Topper from neechy');
-    
+
 // }
 // var str = "3"
 // console.log(typeof(str));
 
- //Arithmetic Operator: +, -, *, /, %, **, ++, --
- //Assignment Operator: =, +=, -=, *=, ,/= ,%= ,**=
- //Comparision operator: ==, ===, !=, !==, >,<, >=, <=, ?, : 
+//Arithmetic Operator: +, -, *, /, %, **, ++, --
+//Assignment Operator: =, +=, -=, *=, ,/= ,%= ,**=
+//Comparision operator: ==, ===, !=, !==, >,<, >=, <=, ?, :
 //  var age  = 15
- // age += 1 ==> age = age + 1
- // age -= 1 ==> age = age - 1
- //age *= 1 ==> age = age * 1
+// age += 1 ==> age = age + 1
+// age -= 1 ==> age = age - 1
+//age *= 1 ==> age = age * 1
 //  age /= 2 ==> age = age / 2
 // age %= 2 ==> age = age % 2
 // age **= 2 ==> age = age ** 2
@@ -211,19 +211,40 @@
 // var age = prompt("Enter your Age: ")
 // if (age != 18) {
 //   console.log("you are eligible for vote!");
-  
+
 // } else if(age > 18){
 //   console.log("you are not eligible for vote!");
-  
+
 // }else{
 //   console.log("dhandli hogai!");
-  
+
 // }
 
-var num = prompt("Enter a Number: ")
-if (num % 2 === 0) {
-  console.log("this num is even");
+// var num = prompt("Enter a Number: ")
+// if (num % 2 === 0) {
+//   console.log("this num is even");
+// } else {
+//   console.log("this number is odd");
+// }
+/*
+ Problem 2: Simple Calculator
+Description:
+User se 2 numbers aur ek operator (+, -, *, /) lo.
+Phir according to operator, correct result calculate karke alert karo.
+*/
+var isLoggedin = prompt("Are you logged in? (yes/no)");
+if (isLoggedin === "yes") {
+  var isProductAvaliable = prompt("Is the product available? (yes/no)");
+  if (isProductAvaliable === "yes") {
+    var isPymentDone = prompt("Is the payment done? (yes/no)"); 
+    if (isPymentDone === "yes") {
+      alert("You can buy this product");
+    } else {
+      alert("Please complete your payment");
+    }
+  } else {
+    alert("Product is not available");
+  }
 } else {
-  console.log("this number is odd");
+  alert("Please login to continue");
 }
- 
