@@ -345,7 +345,7 @@ Phir according to operator, correct result calculate karke alert karo.
 //     console.log("Number is too High!Stop the Loop");
 //     break;
 //   }
-//   total += num; 
+//   total += num;
 // }
 // console.log("The Sum of All Valid Number is: "+ total);
 
@@ -385,17 +385,52 @@ Phir according to operator, correct result calculate karke alert karo.
 // console.log("Total Passed Students: " + passedStudents);
 
 // Question 4:
-for (var i = 1; i <= 5; i++) {
-  var pass = prompt("Enter Password (type exit to stop programm): ");
-  if (pass === "exit") {
-    console.log("Programm Stopped by User!");
-    break;
+// for (var i = 1; i <= 5; i++) {
+//   var pass = prompt("Enter Password (type exit to stop programm): ");
+//   if (pass === "exit") {
+//     console.log("Programm Stopped by User!");
+//     break;
+//   }
+//   if (!pass.includes("@")) {
+//     console.log("Invalid Password, Missing @ Symbol! , Skip it");
+//     continue;
+//   }
+//   console.log("Password Accepted!");
+//   break;
+
+// }
+
+//Nested Loop
+// for (row = 1; row <= 4; row++) {
+//   // <== Outer Loop
+//   console.log("Row Number:" + row);
+//   for (col = 1; col <= 5; col++) {
+//     // <== Inner Loop
+//     console.log(" Student" + " " + col + "in row"
+//      + row);
+//   }
+//   console.log("----------------");
+// }
+//Template Litrellers
+// var num = 666
+// console.log(`Number is ${num} Devil Number`);
+
+//Table Printing using Nested Loop:
+// for (table = 2; table <= 4; table++) {
+//   console.log(`Table of ${table}`);
+//   for (i = 1; i <= 10; i++) {
+//     console.log(`${table} X ${i} = ${table * i}`);
+//   }
+//   console.log("-----------------");
+// }
+
+for (row = 5; row >= 1; row--) {
+  if (row % 2 == 0) {
+    continue
   }
-  if (!pass.includes("@")) {
-    console.log("Invalid Password, Missing @ Symbol! , Skip it");
-    continue;
+  var star = "";
+  for (col = 1; col <= row; col++) {
+    star += "* ";
   }
-  console.log("Password Accepted!");
-  break;
-  
+  console.log(star);
 }
