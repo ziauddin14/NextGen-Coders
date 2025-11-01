@@ -424,13 +424,38 @@ Phir according to operator, correct result calculate karke alert karo.
 //   console.log("-----------------");
 // }
 
-for (row = 5; row >= 1; row--) {
-  if (row % 2 == 0) {
-    continue
+//for (row = 5; row >= 1; row--) {
+//   if (row % 2 == 0) {
+//     continue
+//   }
+//   var star = "";
+//   for (col = 1; col <= row; col++) {
+//     star += "* ";
+//   }
+//   console.log(star);
+// }
+// var num = 1000
+// var factorial = 1
+// for(var i = 1; i <= num ; i++){
+//  factorial *= i
+// }
+//  console.log(factorial)
+
+var num = 6;
+var isPrime = true;
+
+if (num <= 1) {
+  console.log(`${num} is not a Prime Number!`);
+} else {
+  for (var i = 2; i <= num / 2; i++) {
+    if (num % i == 0) {
+      isPrime = false;
+      break
+    }
   }
-  var star = "";
-  for (col = 1; col <= row; col++) {
-    star += "* ";
-  }
-  console.log(star);
+}
+if (isPrime) {
+  console.log(`${num} is a Prime Number`);
+} else {
+  console.log(`${num} isn't a Prime Number`);
 }
