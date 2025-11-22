@@ -366,23 +366,6 @@ Phir according to operator, correct result calculate karke alert karo.
 // console.log("Total Odd Numbers entered: " + countOdd);
 
 // Question 3:
-// var totalMarks = 0;
-// var passedStudents = 0;
-// for (var i = 1; i <= 6; i++) {
-//   var marks = +prompt("Enter a Marks: ");
-//   if (marks < 50) {
-//     console.log("Marks 50 se kam h student Fail! , and Skip it");
-//     continue;
-//   }
-//   if (marks >= 100) {
-//      console.log("Invalid Marks! Loop ko Rook do");
-//     break;
-//   }
-//   totalMarks += marks
-//   passedStudents++;
-// }
-// console.log("Total Marks of Passed Students: " + totalMarks);
-// console.log("Total Passed Students: " + passedStudents);
 
 // Question 4:
 // for (var i = 1; i <= 5; i++) {
@@ -441,21 +424,106 @@ Phir according to operator, correct result calculate karke alert karo.
 // }
 //  console.log(factorial)
 
-var num = 6;
-var isPrime = true;
+// var num = 6;
+// var isPrime = true;
 
-if (num <= 1) {
-  console.log(`${num} is not a Prime Number!`);
-} else {
-  for (var i = 2; i <= num / 2; i++) {
-    if (num % i == 0) {
-      isPrime = false;
-      break
+// if (num <= 1) {
+//   console.log(`${num} is not a Prime Number!`);
+// } else {
+//   for (var i = 2; i <= num / 2; i++) {
+//     if (num % i == 0) {
+//       isPrime = false;
+//       break
+//     }
+//   }
+// }
+// if (isPrime) {
+//   console.log(`${num} is a Prime Number`);
+// } else {
+//   console.log(`${num} isn't a Prime Number`);
+// }
+
+//Functions in JS
+// var a = parseInt(prompt("ENter a First number : "))
+// var b = parseInt(prompt("ENter a second number : "))
+// function add(a, b) {
+//   return a + b;
+// }
+// console.log(add(a, b));
+
+//Functions Expression:
+//Normal Function
+function greet(){
+  console.log("Hello World!");
+}
+greet()
+
+//Function Expression
+var greet = function(){
+  console.log("Hello World!");
+}
+greet()
+
+var fun = function(){
+  return 5 + 5
+}
+console.log(fun());
+
+//Arrow Function
+var greet = (a,b) => a + b
+console.log(greet(5,10));
+
+var cube = (num) => num ** 3
+console.log(cube(3));
+
+var add = (num1, num2) => {
+  return num1 + num2
+}
+console.log(add(10, 20));
+
+//Default Parameters
+function name(name = "Guest User"){
+  return `Hello ${name}`
+}
+console.log(name());
+
+//Scope in JavaScript
+var x = 5
+function test(){
+  var y = 10
+  console.log(x);
+  console.log(y);
+}
+test()
+// console.log(y);
+
+//Nested Function Scope
+function outer(){
+  var a = 10
+  function inner(){
+    console.log(a);
+  }
+  inner()
+}
+outer()
+
+// Exercise Problems on Functions:
+function largestNum(a,b,c){
+  if(a >= b && a >= c){
+    return `${a} is the largest number`
+  }else if(b >= a && b >= c){
+    return `${b} is the largest number`
+  }else{
+    return `${c} is the largest number`
+  }
+}
+console.log(largestNum(10, 20, 15));
+
+function evenNumber(n){
+  for(var i = 1; i <= n; i++){
+    if(i % 2 == 0){
+      console.log(i);
     }
   }
 }
-if (isPrime) {
-  console.log(`${num} is a Prime Number`);
-} else {
-  console.log(`${num} isn't a Prime Number`);
-}
+evenNumber(100);
