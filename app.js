@@ -59,3 +59,31 @@ function updateTodoSplice(index, newTask) {
 }
 updateTodoSplice(2,'c++');
 console.log(todos);
+
+console.log(Math.round(4.5));
+//Random
+console.log(Math.random());
+console.log(Math.random() * 5); // Random number between 0 and 10
+//cieling
+console.log(Math.ceil(4.2));
+//floor
+console.log(Math.floor(4.8));
+//dice roll
+console.log(Math.floor(Math.random() * 6) + 1);
+ // Random number between 1 and 6
+ //power
+console.log(Math.floor(Math.pow(4.9, 2)));
+//square root
+console.log(Math.sqrt(49));
+//practice problem
+//1. Get a random number between 1-100
+console.log(Math.floor(Math.random() * 100) + 1)
+var firstName = ["John", "Jane", "Alex", "Emily"];
+var lastName = ["Doe", "Smith", "Johnson", "Brown"];
+var fullName = []
+for (var i = 0; i < firstName.length; i++) {
+    for (var j = 0; j < lastName.length; j++) {
+    }
+    fullName.push(firstName[i] + " " + lastName[i]);
+}
+console.log(fullName);
