@@ -1,89 +1,69 @@
-// function clearAll(){
-//     document.getElementById("numberinput").value = ""
-// }
-// numberinput.value =
-// numberinput.value + ""
-// function numberclick(num) {
-//     var input=document.getElementById("numberinput")
-// if (!input) return ;
-//  input.value += (num)
-// }
-// function opretorclick(opret) {
-//     var input=document.getElementById("numberinput")
-// if (!input) return ;
-//  input.value += (opret)
-// }
+console.log("Hello World! ");
 
-var todos = [];
-function addTodo(task) {
-  todos.push(task);
-  console.log("Task Added:", task);
-}
-addTodo("kuch bhi");
-console.log(todos);
+//Console: Area where programmer see his code's output
+//log: output jo likhi jaye computer ki taraf se 
+// Semicolon: ye batany k liye k line pori hogai h .
 
-function removeTodo() {
-  if (todos.length === 0) {
-    console.log("No task to remove");
-  } else {
-    let removed = todos.pop();
-    console.log("Removed Task:", removed);
-  }
-}
-removeTodo();
-console.log(todos);
-removeTodo();
-addTodo("JS");
-addTodo("HTML");
-addTodo("React.js");
-function showTodos() {
-  if (todos.length === 0) {
-    console.log("Todo list is empty");
-  } else {
-    console.log("Todo List:");
-    for (let i = 0; i < todos.length; i++) {
-      console.log(i + 1 + ". " + todos[i]);
-    }
-  }
-}
-// showTodos()
-console.log(todos);
+let name = 'Zaid'
+console.log(name);
+console.log(22);
+console.log(true);
 
-function updateTodoSplice(index, newTask) {
-  if (index < 0 || index >= todos.length) {
-    console.log("Invalid index");
-  } else {
-    todos[index] = newTask;
-    console.log("Todo Updated!");
-  }
-}
-updateTodoSplice(2,'c++');
-console.log(todos);
+/*
+Data Types: 
+1: String
+2: Number
+3: Boolean
+4: Array
+5: Object
+6: Null
+7: undefined
+8:BigInt
+9: Symbol
+*/
 
-console.log(Math.round(4.5));
-//Random
-console.log(Math.random());
-console.log(Math.random() * 5); // Random number between 0 and 10
-//cieling
-console.log(Math.ceil(4.2));
-//floor
-console.log(Math.floor(4.8));
-//dice roll
-console.log(Math.floor(Math.random() * 6) + 1);
- // Random number between 1 and 6
- //power
-console.log(Math.floor(Math.pow(4.9, 2)));
-//square root
-console.log(Math.sqrt(49));
-//practice problem
-//1. Get a random number between 1-100
-console.log(Math.floor(Math.random() * 100) + 1)
-var firstName = ["John", "Jane", "Alex", "Emily"];
-var lastName = ["Doe", "Smith", "Johnson", "Brown"];
-var fullName = []
-for (var i = 0; i < firstName.length; i++) {
-    for (var j = 0; j < lastName.length; j++) {
-    }
-    fullName.push(firstName[i] + " " + lastName[i]);
-}
-console.log(fullName);
+//How can we check any variable's data type?
+console.log(typeof(name));
+
+//Class 02: (Operators in JavaScript)
+//Operators: Symbols that perform operations on operands (values and variables)
+let a = 10
+let b = 5
+//Arithmetic Operators : +, -, *, /, % , ++, -- , **, //
+console.log(a + b); // Addition
+console.log(a - b); // Subtraction
+console.log(a * b); // Multiplication
+console.log(a / b); // Division
+console.log(a % b); // Modulus
+console.log(a ** b); // Exponentiation
+console.log(++a); // Increment
+console.log(--b); // Decrement
+
+//Practice: Write a program to calculate the area of a rectangle
+let lenght = 40;
+let width = 20;
+
+console.log('Area of rectangle is: ' + (lenght * width));
+
+//Assignment Operators: =, +=, -=, *=, /=, %=, ==, !=, ===, !==
+let c = 10
+c *= 5 // c = c *5
+console.log(c); // 50
+//Comparison Operators: ==, !=, ===, !==, >, <, >=, <=
+console.log(5 == "5");
+console.log('5' === "5"); 
+console.log( 5 != 8);
+console.log(10 !== "8");
+console.log(10 != "10");
+console.log(10 !== '10');
+console.log(100 > 1000);
+console.log( 100 >= 100);
+console.log(1250 <= 1788);
+console.log(14780 !== 1475);
+
+
+
+
+
+
+
