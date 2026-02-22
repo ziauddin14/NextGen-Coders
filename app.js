@@ -61,6 +61,29 @@ console.log( 100 >= 100);
 console.log(1250 <= 1788);
 console.log(14780 !== 1475);
 
+//Class 03: Logical Operators: &&, ||, !
+let attendance = +prompt("Enter your attendance percentage:");
+let marks = +prompt("Enter your marks percentage:");
+if (attendance >= 80 || marks >= 85) {
+    console.log("Congratulations! You are eligible for the next level.");
+}
+//Logical NOT operator : !
+let isDriving  = true;
+if (!isDriving) {
+    console.log('ab drive nhi kr skty!')
+}
+let isLoggedIn = prompt("Are you logged in? (yes/no)");
+if (!isLoggedIn || isLoggedIn.toLowerCase() !== "yes") {
+    console.log("You are not logged in. please log in first.");
+}else {    
+    console.log("Welcome back!");
+}
+//Default False Vlaue: In JavaScript.
+// 0, "", null, undefined, NaN, false
+console.log(NaN !== NaN); 
+console.log("" === '');
+console.log(1 === false);
+
 
 
 
