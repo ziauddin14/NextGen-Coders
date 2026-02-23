@@ -84,9 +84,65 @@ console.log(NaN !== NaN);
 console.log("" === '');
 console.log(1 === false);
 
+/*Class 04: Conditional Statements: if, else if, else, switch, case,
+ default, break,  ternary operator
+*/
+//If-Else Statement
+let age = +prompt("Enter your age:");
+if (age < 18) {
+    console.log("You are a minor.");
+} else if (age >= 18 && age < 60) {
+    console.log("You are an adult.");
+} else {
+    console.log("You are a senior citizen.");
+}
+//Switch Case Statement
+let day = prompt("Enter a day of the week:");
+switch (day.toLowerCase()) {
+    case "monday":
+        console.log("Today is Monday.you can start your week with a positive mindset.");
+        break
+    case "tuesday":
+        console.log("Today is Tuesday.");
+        break
+    case "wednesday":
+        console.log("Today is Wednesday.");
+        break
+    case "thursday":
+        console.log("Today is Thursday.");
+        break
+    default:
+        console.log("Invalid day entered.");
+}
 
+//ATM Machine program
+let atm_options = prompt("Welcome to the ATM! Please select an option: \n1. Check Balance\n2. Withdraw Money\n3. Deposit Money\n4. Exit");
+switch (atm_options) {
+    case "1":
+        console.log("Your current balance is $500.");
+        break;
+    case "2":
+        let withdraw_amount = +prompt("Enter the amount to withdraw:");
+        if (withdraw_amount > 500) {
+            console.log("Insufficient funds.");
+        } else {
+            console.log(`You have withdrawn $${withdraw_amount}. Your new balance is $${500 - withdraw_amount}.`);
+        }
+        break;
+    case "3":
+        let deposit_amount = +prompt("Enter the amount to deposit:");
+        console.log(`You have deposited $${deposit_amount}. Your new balance is $${500 + deposit_amount}.`);
+        break;
+    case "4":
+        console.log("Thank you for using the ATM. Goodbye!");
+        break;
+    default:
+        console.log("Invalid option selected. Please try again.");
+        break;
+}
 
-
-
-
+//Ternary Operator
+let number = +prompt("Enter a number:");
+let result = (number % 2 === 0 ) ? "Number is Even " : "Num is Odd";
+console.log(result);
 
