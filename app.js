@@ -146,3 +146,51 @@ let number = +prompt("Enter a number:");
 let result = (number % 2 === 0 ) ? "Number is Even " : "Num is Odd";
 console.log(result);
 
+
+//Class 04 : Loops in JavaScript: for, while, do-while
+//For Loop, while loop, do-while loop, break and contiinue staements
+//For loop
+for (let i = 1 ; i <= 10 ; i++) {
+    console.log(i);
+}
+//While Loop
+let j = 1
+while(j <= 10){
+    console.log(j);
+    j++
+}
+//Do-While Loop
+
+let i = 10
+do {
+    console.log(i);
+    i++
+} while (i <= 5);
+
+for (let i = 0; i <= 15; i++) {
+   if (i === 8) {
+    break; // Exit the loop when i is 8
+   }    
+    console.log(i);
+}
+console.log("Loop exited at i = 8");
+
+//Continue Statement
+for (let i = 0; i <= 10; i++) {
+    if (i % 2 !== 0) {
+        continue; // Skip the rest of the loop when i is 5
+    }
+    console.log(i);
+}
+console.log("Loop completed, skipped all odd numbers.");
+
+for (let i = 5; i >= 1; i--){
+    console.log(i);
+}
+
+//Sum of 1 - 10
+let sum = 0 
+for (let i = 1; i <= 10; i++) {
+    sum += i 
+}
+console.log("The sum of numbers from 1 to 10 is: " + sum);
