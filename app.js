@@ -194,3 +194,40 @@ for (let i = 1; i <= 10; i++) {
     sum += i 
 }
 console.log("The sum of numbers from 1 to 10 is: " + sum);
+
+//Phase 02: 
+//Functions:
+function my_name(){
+    console.log("My name is Ali");  
+}
+my_name(); //Function Call
+
+//Function with Parameters
+function greet(name){
+    console.log("Hello, " + name + "! Welcome to JavaScript programming.");
+    
+}
+greet("Zaid")
+greet("Ali")
+greet("Ahmed")
+greet("Ayesha")
+greet("Sara")
+
+//Function with Return Value
+function add(a, b){
+    return a + b 
+}
+let result = add(5, 10);
+console.log("The sum of 5 and 10 is: " + result);
+
+//Funtion Expression
+let multiply = function (x, y) {
+    return x * y 
+}
+let product = multiply(4, 5);
+console.log("The product of 4 and 5 is: " + product);
+
+//Arrow Function
+let divide = (x, y) => {return x / y}
+let quotient = divide(20, 4);
+console.log("The quotient of 20 and 4 is: " + quotient);
