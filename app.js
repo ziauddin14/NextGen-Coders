@@ -231,3 +231,37 @@ console.log("The product of 4 and 5 is: " + product);
 let divide = (x, y) => {return x / y}
 let quotient = divide(20, 4);
 console.log("The quotient of 20 and 4 is: " + quotient);
+
+//Scope & Hoisting
+// Scope: Variable accessibility in diffrent parts of code
+//Type of Scope: Global Scope, Local Scope, Block Scope
+//Globl Scope: variable delared outside of any function 
+let global_scope_variable = "I have global scope";
+function checkScope() {
+    console.log(global_scope_variable); // Accessible here
+}
+checkScope();
+console.log(global_scope_variable); // Accessible here
+
+//Loal Scope: variable declared inside a function
+function localScope() {
+    let local_scope_variable = "I have local scope";
+    console.log(local_scope_variable); // Accessible here
+}
+localScope();
+// console.log(local_scope_variable); //Unaccessible here, will throw an error
+
+//Block Scope: variable declared inside a block (if, for, while)
+if (true) {
+    const block_scope_variable = "I have block scope";
+    console.log(block_scope_variable); // Accessible here
+}
+console.log(block_scope_variable); // Unaccessible here, will throw an error
+
+// BLock Scope with var: var does not have block scope, it has function scope
+if (true) {
+    var function_scope_variable = "I have function scope";
+    console.log(function_scope_variable); // Accessible here
+}
+
+//Hoisting: 
