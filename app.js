@@ -217,7 +217,7 @@ greet("Sara")
 function add(a, b){
     return a + b 
 }
-let result = add(5, 10);
+// let result = add(5, 10);
 console.log("The sum of 5 and 10 is: " + result);
 
 //Funtion Expression
@@ -265,3 +265,23 @@ if (true) {
 }
 
 //Hoisting: 
+//Arrays : A list in JavaScript that can store multiple values in a single variable
+let fruits = ["Apple", "Banana", "Orange", "Mango",];
+console.log(fruits);
+console.log(fruits[2]); // Accessing an element by index
+//Array Meethods: push, pop, shift, unshift, indexOf, length
+fruits.push("Grapes"); // Adds an element to the end of the array
+console.log(fruits);
+fruits.pop(); // Removes the last element from the array
+console.log(fruits);
+fruits.unshift("Strawberry"); // Adds an element to the beginning of the array
+console.log(fruits);
+fruits.shift(); // Removes the first element from the array
+console.log(fruits);
+console.log(fruits.indexOf("Banana")); // Returns the index of the first occurrence of "Banana"
+console.log(fruits.length); // Returns the number of elements in the array
+//Slice and Splice Methods
+let citrus = fruits.slice(1, 4); // Creates a new array with elements from index 1 to 2 (3 is not included)
+console.log(citrus);
+fruits.splice(2, 1, "Pineapple"); // Removes 1 element at index 2 and adds "Pineapple" at that position
+console.log(fruits);
