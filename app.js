@@ -285,3 +285,41 @@ let citrus = fruits.slice(1, 4); // Creates a new array with elements from index
 console.log(citrus);
 fruits.splice(2, 1, "Pineapple"); // Removes 1 element at index 2 and adds "Pineapple" at that position
 console.log(fruits);
+
+// Advanced Array Methods: forEach, map, filter, reduce
+let numbers = [1, 2, 3, 4, 5];
+//map method: creates a new array by applying a function to each element of the original array
+let squaredNumbers = numbers.map(num => num * num);
+console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
+
+//filter method: creates a new array with all elements that pass a test implemented by a function
+let evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4]
+
+//forEach method: executes a provided function once for each array element
+numbers.forEach(num => console.log(num)); // Output: 1 2 3 4 5
+numbers.forEach(num => console.log(num * 2)); // Output: 2 4 6 8 10
+numbers.forEach(num => console.log(`The square of ${num} is ${num * num}`)); // Output: The square of 1 is 1, The square of 2 is 4, etc.
+numbers.forEach((num, index) => console.log(`Index: ${index}, Value: ${num}`)); // Output: Index: 0, Value: 1, Index: 1, Value: 2, etc.
+
+//reduce and hoisting remaining
+
+//Objects: A collection of key-value pairs in JavaScript
+//Object Literal Syntax
+// let person = {
+//     key: "value",   
+// };
+let person = {
+    name: "Zaid",
+    age: 25,
+    city: "Karachi",
+}
+console.log(person);
+console.log(person.name); // Accessing a property using dot notation
+console.log(person["age"]); // Accessing a property using bracket notation
+person.age = 300 // Modifying a property value
+console.log(person);
+person.country = "Pakistan" // Adding a new property
+console.log(person);
+delete person.city // Deleting a property
+console.log(person);
